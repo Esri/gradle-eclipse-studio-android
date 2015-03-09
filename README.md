@@ -1,0 +1,1 @@
+# gradle-ecllipse-studio-android
