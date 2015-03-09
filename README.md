@@ -2,7 +2,7 @@
 ================================
 
 # Build ArcGIS Android Eclipse project with Gradle
-An attempt to retain Eclipse compatibility after migrating to Gradle.
+A gradle build project structure to retain Eclipse compatibility after migrating ArcGIS Android SDK projects to Android Studio.
 
 ## Usage
 Use this command to setup Eclipse project.
