@@ -1,5 +1,3 @@
-# gradle-ecllipse-studio-android
-================================
 # Build ArcGIS Android Eclipse project with Gradle
 A gradle build project structure to retain Eclipse compatibility after migrating ArcGIS Android SDK projects to Android Studio.
 
