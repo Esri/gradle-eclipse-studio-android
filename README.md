@@ -25,15 +25,9 @@ Once you have downloaded the SDK, extract it to disk and copy the contents from 
 
 ![](Android-SDK-libs.png)
 
-## Usage
-Now that you have set up the repo project you can generate projects with cross-IDE compatibility between Eclipse and Android Studio based on the gradle build tool.  Use this command to setup Eclipse project.
-```
-$ gradle cleanEclipse eclipse --info
-```
-
-## Build Script
+## Build Script explained
 ### Eclipse configuration
-First we configure the classpath file manually.  In generating we add entries for Android Gradle based source location.  
+First we configure the classpath file.  In generating we add entries for Android Gradle based source location as shown below:  
 
 ```groovy
 // Configuring Eclipse classpath
@@ -58,7 +52,7 @@ eclipse.classpath.file {
 }
 ```
 
-Then we configure the Eclipse project.  The project name can be changed to the name you will see in the Ecilpse project explorer.  Then we set the Android nature and builders to let Eclipse know that this is an Android Project.  
+Then we configure the Eclipse project.  The project name can be changed to the name you will see in the Eclipse project explorer.  Then we set the Android nature and builders to let Eclipse know that this is an Android Project.  
 
 ```groovy
 // Configuring Eclipse project
@@ -74,9 +68,8 @@ eclipse.project {
 }
 ```
 
-
 ## Project Structure
-File structure has changed for Gradle based Android Studio projects.  Eclipse is more restrictive than Android Studio as you can use Gradle to work with almost any file structure you describe in the source sets of the build script.  Here are the artifacts that Ecilpse will not let you move:  
+File structure has changed for Gradle based Android Studio projects.  Eclipse is more restrictive than Android Studio as you can use Gradle to work with almost any file structure you describe in the source sets of the build script.  Here are the artifacts that Eclipse will not let you move:  
 
 * AndroidManifext.xml
 * res/
@@ -91,6 +84,13 @@ sourceSets {
     res.srcDirs = ['res']
     assets.srcDirs = ['assets']
   }
+```
+
+## Usage
+Now that you have set up the repo project and contextualized the gradle build script (build.gradle) you can generate projects with cross-IDE compatibility between Eclipse and Android Studio based on the gradle build tool.  Use this command to setup Eclipse project.
+
+```
+$ gradle cleanEclipse eclipse --info
 ```
 
 ## Open project in Eclipse or Android Studio
