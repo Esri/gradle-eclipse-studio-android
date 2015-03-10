@@ -12,9 +12,10 @@ If you haven't already, fork the [this repo](https://github.com/Esri/gradle-ecli
 
 Open your terminal, navigate to your working directory, use ```git clone``` to get a copy of the repo.
 
-```
+```bash
 # Clones your fork of the repository into the current directory in terminal
 $ git clone https://github.com/YOUR-USERNAME/gradle-eclipse-studio-android.git
+```
 
 ## Download the SDK
 In order to work with this repo you need to download the local ArcGIS Android SDK.  Get v10.2.5 [here](https://developers.arcgis.com/downloads/).  
