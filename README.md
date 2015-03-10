@@ -26,7 +26,7 @@ Once you have downloaded the SDK, extract it to disk and copy the contents from 
 ![](Android-SDK-libs.png)
 
 ## Usage
-Use this command to setup Eclipse project.
+Now that you have set up the repo project you can generate projects with cross-IDE compatibility between Eclipse and Android Studio based on the gradle build tool.  Use this command to setup Eclipse project.
 ```
 $ gradle cleanEclipse eclipse --info
 ```
