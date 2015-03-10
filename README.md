@@ -21,7 +21,9 @@ $ git clone https://github.com/YOUR-USERNAME/gradle-eclipse-studio-android.git
 In order to work with this repo you need to download the local ArcGIS Android SDK.  Get v10.2.5 [here](https://developers.arcgis.com/downloads/).  
 
 ## Add ArcGIS Android libs
-Once you have downloaded the SDK, extract it to disk and copy the contents from your local SDK install **libs/** directory to the root level in this project.  
+Once you have downloaded the SDK, extract it to disk and copy the contents from your local SDK install **libs/** directory to the root level in this project.  Below is what your projects **libs/** directory should look like after you have added them in:  
+
+![](Android-SDK-libs.png)
 
 ## Usage
 Use this command to setup Eclipse project.
