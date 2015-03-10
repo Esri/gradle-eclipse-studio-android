@@ -83,6 +83,21 @@ You can now open the project in Eclipse or import into Android Studio.
 
 ![](eclipse-project-structure.png)
 
+# Developer Instructions
+
+## Fork the repo
+If you haven't already, fork the [this repo](https://github.com/Esri/gradle-eclipse-studio-android/fork).
+
+## Clone the repo
+### Command line Git
+[Clone the Gradle Eclipse Studio Android repo](https://help.github.com/articles/fork-a-repo#step-2-clone-your-fork)
+
+Open your terminal, navigate to your working directory, use ```git clone``` to get a copy of the repo.
+
+```
+# Clones your fork of the repository into the current directory in terminal
+$ git clone https://github.com/YOUR-USERNAME/gradle-eclipse-studio-android.git
+
 ## Issues
 Find a bug or want to request a new feature enhancement?  Let us know by submitting an issue.
 
