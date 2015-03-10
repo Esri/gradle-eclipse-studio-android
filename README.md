@@ -1,8 +1,28 @@
 # gradle-ecllipse-studio-android
 ================================
-
 # Build ArcGIS Android Eclipse project with Gradle
 A gradle build project structure to retain Eclipse compatibility after migrating ArcGIS Android SDK projects to Android Studio.
+
+# Developer Instructions
+
+## Fork the repo
+If you haven't already, fork the [this repo](https://github.com/Esri/gradle-eclipse-studio-android/fork).
+
+## Clone the repo
+### Command line Git
+[Clone the Gradle Eclipse Studio Android repo](https://help.github.com/articles/fork-a-repo#step-2-clone-your-fork)
+
+Open your terminal, navigate to your working directory, use ```git clone``` to get a copy of the repo.
+
+```
+# Clones your fork of the repository into the current directory in terminal
+$ git clone https://github.com/YOUR-USERNAME/gradle-eclipse-studio-android.git
+
+## Download the SDK
+In order to work with this repo you need to download the local ArcGIS Android SDK.  Get v10.2.5 [here](https://developers.arcgis.com/downloads/).  
+
+## Add ArcGIS Android libs
+Once you have downloaded the SDK, extract it to disk and copy the contents from your local SDK install **libs/** directory to the root level in this project.  
 
 ## Usage
 Use this command to setup Eclipse project.
@@ -82,21 +102,6 @@ You can now open the project in Eclipse or import into Android Studio.
 ### Eclipse project
 
 ![](eclipse-project-structure.png)
-
-# Developer Instructions
-
-## Fork the repo
-If you haven't already, fork the [this repo](https://github.com/Esri/gradle-eclipse-studio-android/fork).
-
-## Clone the repo
-### Command line Git
-[Clone the Gradle Eclipse Studio Android repo](https://help.github.com/articles/fork-a-repo#step-2-clone-your-fork)
-
-Open your terminal, navigate to your working directory, use ```git clone``` to get a copy of the repo.
-
-```
-# Clones your fork of the repository into the current directory in terminal
-$ git clone https://github.com/YOUR-USERNAME/gradle-eclipse-studio-android.git
 
 ## Issues
 Find a bug or want to request a new feature enhancement?  Let us know by submitting an issue.
