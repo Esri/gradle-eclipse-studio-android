@@ -92,6 +92,7 @@ Now that you have set up the repo project and contextualized the gradle build sc
 ```
 $ gradle cleanEclipse eclipse --info
 ```
+
 This build command will set up projects with a HelloWorld source template to customize your app project of which you can now open in Eclipse or Android Studio all while managing the project with Gradle.
 
 ## Open project in Eclipse or Android Studio
