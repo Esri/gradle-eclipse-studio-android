@@ -17,14 +17,6 @@ Open your terminal, navigate to your working directory, use ```git clone``` to g
 $ git clone https://github.com/YOUR-USERNAME/gradle-eclipse-studio-android.git
 ```
 
-## Download the SDK
-In order to work with this repo you need to download the local ArcGIS Android SDK.  Get v10.2.5 [here](https://developers.arcgis.com/downloads/).  
-
-## Add ArcGIS Android libs
-Once you have downloaded the SDK, extract it to disk and copy the contents from your local SDK install **libs/** directory to the root level in this project.  Below is what your projects **libs/** directory should look like after you have added them in:  
-
-![](Android-SDK-libs.png)
-
 ## Build Script explained
 ### Eclipse configuration
 First we configure the classpath file.  In generating we add entries for Android Gradle based source location as shown below:  
@@ -87,24 +79,29 @@ sourceSets {
 ```
 
 ## Usage
-Now that you have set up the repo project and contextualized the gradle build script (build.gradle) you can generate projects with cross-IDE compatibility between Eclipse and Android Studio based on the gradle build tool.  Use this command to setup Eclipse project.
+Now that you have set up the repo project and contextualized the gradle build script (build.gradle) you can generate projects with cross-IDE compatibility between Eclipse and Android Studio based on the gradle wrapper build tool.  It is important to use the gradle wrapper to ensure the correct version of gradle is used to support the project.  Use this command to setup Eclipse project.
 
 ```
-$ gradle cleanEclipse eclipse --info
+$ ./gradlew cleanEclipse eclipse --info
 ```
 
 This build command will set up projects with a HelloWorld source template to customize your app project of which you can now open in Eclipse or Android Studio all while managing the project with Gradle.
 
 ## Open project in Eclipse or Android Studio
-You can now open the project in Eclipse or import into Android Studio.
+You can now open the project in Eclipse or import into Android Studio.  
 
-### Android Studio Project
+### Eclipse
+Follow these steps to import the project into Eclipse.
 
-![](android-studio-project-structure.png)
+- Select **File > Import**
+- Choose **Gradle > Gradle Project** from the Import dialog
+- Select **Next** then **Finish** to import the project.  
 
-### Eclipse project
+From the Gradle Tasks View, double click on **installDebug** to build and install a debug build on your device or emulator.  
 
-![](eclipse-project-structure.png)
+![](gradle-tasks.png)
+
+The app will be pushed to your device or emulator, but you will need to manually start the app.
 
 ## Issues
 Find a bug or want to request a new feature enhancement?  Let us know by submitting an issue.
@@ -118,7 +115,7 @@ Anyone and everyone is welcome to [contribute](https://github.com/Esri/maps-app-
 4. Improve documentation
 
 ## Licensing
-Copyright 2015 Esri
+Copyright 2016 Esri
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
