@@ -88,15 +88,20 @@ $ ./gradlew cleanEclipse eclipse --info
 This build command will set up projects with a HelloWorld source template to customize your app project of which you can now open in Eclipse or Android Studio all while managing the project with Gradle.
 
 ## Open project in Eclipse or Android Studio
-You can now open the project in Eclipse or import into Android Studio.
+You can now open the project in Eclipse or import into Android Studio.  
 
-### Android Studio Project
+### Eclipse
+Follow these steps to import the project into Eclipse.
 
-![](android-studio-project-structure.png)
+- Select **File > Import**
+- Choose **Gradle > Gradle Project** from the Import dialog
+- Select **Next** then **Finish** to import the project.  
 
-### Eclipse project
+From the Gradle Tasks View, double click on **installDebug** to build and install a debug build on your device or emulator.  
 
-![](eclipse-project-structure.png)
+![](gradle-tasks.png)
+
+The app will be pushed to your device or emulator, but you will need to manually start the app.
 
 ## Issues
 Find a bug or want to request a new feature enhancement?  Let us know by submitting an issue.
@@ -110,7 +115,7 @@ Anyone and everyone is welcome to [contribute](https://github.com/Esri/maps-app-
 4. Improve documentation
 
 ## Licensing
-Copyright 2015 Esri
+Copyright 2016 Esri
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
