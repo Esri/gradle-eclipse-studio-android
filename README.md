@@ -79,10 +79,10 @@ sourceSets {
 ```
 
 ## Usage
-Now that you have set up the repo project and contextualized the gradle build script (build.gradle) you can generate projects with cross-IDE compatibility between Eclipse and Android Studio based on the gradle build tool.  Use this command to setup Eclipse project.
+Now that you have set up the repo project and contextualized the gradle build script (build.gradle) you can generate projects with cross-IDE compatibility between Eclipse and Android Studio based on the gradle wrapper build tool.  It is important to use the gradle wrapper to ensure the correct version of gradle is used to support the project.  Use this command to setup Eclipse project.
 
 ```
-$ gradle cleanEclipse eclipse --info
+$ ./gradlew cleanEclipse eclipse --info
 ```
 
 This build command will set up projects with a HelloWorld source template to customize your app project of which you can now open in Eclipse or Android Studio all while managing the project with Gradle.
